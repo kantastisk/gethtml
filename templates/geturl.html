@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {text-align: center;}
+      p {text-align: center;}
+      div {text-align: center;}
+    </style>
+  </head>
+  <body>
+    <div>
+      <textarea rows='70' cols='100'>Indsæt link og tryk enter</textarea>
+    </div>
+    <div>
+      <form action="{{ url_for('showresult') }}" method='post'>
+        <p><input type='url' id='url' name='url'></p>
+
+      </form>
+  </body>
+</html>
